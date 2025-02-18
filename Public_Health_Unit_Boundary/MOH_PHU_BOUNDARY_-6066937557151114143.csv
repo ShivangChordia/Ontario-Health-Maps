@@ -1,0 +1,35 @@
+﻿FID,OGF_ID,PHU_ID,NAME_ENG,NAME_FR,GEO_UPD_DT,EFF_DATE,Shape__Area,Shape__Length
+1,71878062,2270,York Region Public Health,Service de santé de la région de York, ,2.02005E+13,4064927422,333012.6068
+2,71878005,5183,Huron Perth Health Unit,Circonscription Sanitaire de Huron et Perth,2.02005E+13,2.02005E+13,10764266368,513599.9595
+3,71878059,2265,"Region of Waterloo, Public Health",Bureau de santé de la région de Waterloo, ,2.02005E+13,2630598126,251873.9833
+4,71878029,4913,Southwestern Public Health,Bureau de santé du Sud-Ouest,2.02005E+13,2.02005E+13,7349576226,632592.4438
+5,71878057,2237,Hamilton Public Health Services,Services de santé publique de Hamilton, ,2.02005E+13,2165252778,233881.2215
+6,71878051,2262,Thunder Bay District Health Unit,Bureau de santé du district de Thunder Bay, ,2.02005E+13,6.7936E+11,7472932.261
+7,71878041,2253,Peel Public Health,Bureau de santé de la région de Peel, ,2.02005E+13,2405827227,256695.6007
+8,71878038,2242,Lambton Public Health,Comté de Lambton, ,2.02005E+13,5697685026,556638.9746
+9,71878035,2266,Wellington-Dufferin-Guelph Health Unit,Bureau de santé de Wellington-Dufferin-Guelph, ,2.02005E+13,8072751092,548581.5979
+10,71878032,2227,Brant County Health Unit,Bureau de santé du comté de Brant, ,2.02005E+13,2143466271,216985.3175
+11,71878026,2244,Middlesex-London Health Unit,Bureau de santé de Middlesex-London, ,2.02005E+13,6239411859,445617.3051
+12,71878023,2261,Sudbury and District Health Unit,Service de santé publique de Sudbury et du district, ,2.02005E+13,1.10122E+11,5473409.055
+13,71877993,2235,"Haliburton, Kawartha, Pine Ridge District Health Unit","Bureau de santé du district d'Haliburton, Kawartha et Pine Ridge", ,2.02005E+13,19585038379,1151264.063
+14,71877988,2246,Niagara Region Public Health Department,Bureau de santé de la région du Niagara, ,2.02005E+13,3529059036,355439.0309
+15,71877985,2240,Chatham-Kent Health Unit,Bureau de santé de Chatham-Kent, ,2.02005E+13,4567864296,487040.027
+16,71877982,2241,"Kingston, Frontenac and Lennox and Addington Health Unit","Bureau de santé de Kingston, Frontenac, Lennox et Addington", ,2.02005E+13,14247303623,1231312.362
+17,71877975,2268,Windsor-Essex County Health Unit,Unité sanitaire de Windsor-Essex, ,2.02005E+13,3402249811,532150.8427
+18,71877972,2255,Peterborough Public Health,Bureau de santé de Peterborough, ,2.02005E+13,8297175662,412648.0701
+19,71877970,2233,Grey Bruce Health Unit,Bureau de santé de Grey Bruce, ,2.02005E+13,17051119448,1416445.361
+20,71877964,2258,Eastern Ontario Health Unit,Bureau de santé de l'Est de l'Ontario, ,2.02005E+13,10886770136,817831.684
+21,71877960,2247,North Bay Parry Sound District Health Unit,Bureau de santé du district de North Bay-Parry Sound, ,2.02005E+13,39650126570,3035811.783
+22,71877952,2251,Ottawa Public Health,Santé publique Ottawa, ,2.02005E+13,5843845863,387937.9553
+23,71877950,2243,"Leeds, Grenville and Lanark District Health Unit","Bureau de santé du district de Leeds, Grenville et Lanark", ,2.02005E+13,13545743563,828808.5484
+24,71878002,2249,Northwestern Health Unit,Bureau de santé du Nord-Ouest, ,2.02005E+13,5.20225E+11,12351525.73
+25,71877945,2234,Haldimand-Norfolk Health Unit,Bureau de santé d'Haldimand-Norfolk, ,2.02005E+13,5368161032,1013783.648
+26,71878009,2263,Timiskaming Health Unit,Bureau de santé de Témiskamingue, ,2.02005E+13,34362405428,889208.9405
+27,71877941,2257,Renfrew County and District Health Unit,Bureau de santé du comté et du district de Renfrew, ,2.02005E+13,33772281039,1077458.711
+28,71877938,3895,Toronto Public Health,Bureau de santé de Toronto, ,2.02005E+13,1215190622,280691.9853
+29,71877935,2236,Halton Region Health Department,Bureau de santé de la région de Halton, ,2.02005E+13,1852750279,214617.7863
+30,71877933,2238,Hastings and Prince Edward Counties Health Unit,Bureau de santé de Hastings et Prince Edward, ,2.02005E+13,14638822293,1440597.66
+31,71877929,2260,Simcoe Muskoka District Health Unit,Bureau de santé du comté de Simcoe, ,2.02005E+13,19556559136,1955533.368
+32,71877925,2230,Durham Region Health Department,Bureau de santé de Durham, ,2.02005E+13,5082101896,423337.2844
+33,71877915,2256,Porcupine Health Unit,Bureau de santé Porcupine, ,2.02005E+13,7.32652E+11,4762628.244
+34,71877923,2226,Algoma Public Health Unit,Santé publique Algoma, ,2.02005E+13,98131861781,3692228.989
