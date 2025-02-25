@@ -9,7 +9,7 @@ const HealthMap = () => {
 
   // 🔹 Fetch PHU Data from PostgreSQL API (Neon)
   useEffect(() => {
-    fetch("http://localhost:5000/api/phu-data") // Ensure backend is running
+    fetch(`${import.meta.env.VITE_BACKEND_URL}/api/phu-data`) // Ensure backend is running
       .then((response) => response.json())
       .then((data) => {
         console.log("✅ Fetched PHU Data:", data);
