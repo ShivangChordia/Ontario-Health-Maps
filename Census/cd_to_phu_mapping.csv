@@ -1,51 +1,50 @@
-CD,PHU_Name,
-3518,Durham Region Health Department,
-3546,"Haliburton, Kawartha, Pine Ridge District Health Unit",
-3514,"Haliburton, Kawartha, Pine Ridge District Health Unit",
-3516,"Haliburton, Kawartha, Pine Ridge District Health Unit",
-3515,Peterborough County-City Health Unit,
-3543,Simcoe Muskoka District Health Unit,
-3544,Simcoe Muskoka District Health Unit,
-3519,York Region Health Services Department,
-3529,Brant County Health Unit,
-3528,Haldimand-Norfolk Health Unit,
-3525,City of Hamilton – Public Health Services,
-3526,Regional Niagara Public Health Department,
-3524,Halton Region Health Department,
-3521,Regional Municipality of Peel Health Department,
-3530,Regional Municipality of Waterloo, Community Health Department
-3522,Wellington-Dufferin-Guelph Health Unit,
-3523,Wellington-Dufferin-Guelph Health Unit,
-3502,Eastern Ontario Health Unit,
-3501,Eastern Ontario Health Unit,
-3512,Hastings & Prince Edward Counties Health Unit,
-3513,Hastings & Prince Edward Counties Health Unit,
-3510,"Kingston, Frontenac Lennox & Addington Health Unit",
-3511,"Kingston, Frontenac Lennox & Addington Health Unit",
-3507,"Leeds, Grenville and Lanark District Health Unit",
-3509,"Leeds, Grenville and Lanark District Health Unit",
-3506,City of Ottawa – Public Health & Long Term Care Branch,
-3547,Renfrew County & District Health Unit,
-3557,Algoma Health Unit,
-3548,North Bay Parry Sound District Health Unit,
-3549,North Bay Parry Sound District Health Unit,
-3560,Northwestern Health Unit,
-3559,Northwestern Health Unit,
-3558,Northwestern Health Unit,
-3556,Porcupine Health Unit,
-3553,Sudbury & District Health Unit,
-3552,Sudbury & District Health Unit,
-3551,Sudbury & District Health Unit,
-3554,Thunder Bay District Health Unit,
-3555,Timiskaming Health Unit,
-3536,Chatham-Kent Public Health Division,
-3534,Elgin-St Thomas Health Unit,
-3541,Grey Bruce Health Unit,
-3542,Grey Bruce Health Unit,
-3540,Huron County Health Unit,
-3538,Lambton Health Unit,
-3539,Middlesex-London Health Unit,
-3532,Oxford County Board of Health,
-3531,Perth District Health Unit,
-3537,Windsor-Essex County Health Unit,
-3520,Toronto Public Health,
+CD,PHU_Name
+3501,Eastern Ontario Health Unit
+3502,Eastern Ontario Health Unit
+3506,Ottawa Public Health
+3507,"Leeds, Grenville and Lanark District Health Unit"
+3509,"Leeds, Grenville and Lanark District Health Unit"
+3510,"Kingston, Frontenac and Lennox and Addington Health Unit"
+3511,"Kingston, Frontenac and Lennox and Addington Health Unit"
+3512,Hastings and Prince Edward Counties Health Unit
+3513,Hastings and Prince Edward Counties Health Unit
+3514,"Haliburton, Kawartha, Pine Ridge District Health Unit"
+3515,Peterborough Public Health
+3516,"Haliburton, Kawartha, Pine Ridge District Health Unit"
+3518,Durham Region Health Department
+3519,York Region Public Health
+3520,Toronto Public Health
+3521,"Peel Public Health	"
+3522,Wellington-Dufferin-Guelph Health Unit
+3523,Wellington-Dufferin-Guelph Health Unit
+3524,Halton Region Health Department
+3525,Hamilton Public Health Services
+3526,Niagara Region Public Health Department
+3528,Haldimand-Norfolk Health Unit
+3529,Brant County Health Unit
+3530,"Region of Waterloo, Public Health"
+3531,Huron Perth Health Unit
+3532,Southwestern Public Health
+3534,Southwestern Public Health
+3536,Chatham-Kent Health Unit
+3537,Windsor-Essex County Health Unit
+3538,"Lambton Public Health	"
+3539,Middlesex-London Health Unit
+3540,Huron Perth Health Unit
+3541,Grey Bruce Health Unit
+3542,Grey Bruce Health Unit
+3543,Simcoe Muskoka District Health Unit
+3544,Simcoe Muskoka District Health Unit
+3546,"Haliburton, Kawartha, Pine Ridge District Health Unit"
+3547,Renfrew County and District Health Unit
+3548,North Bay Parry Sound District Health Unit
+3549,North Bay Parry Sound District Health Unit
+3551,Sudbury and District Health Unit
+3552,Sudbury and District Health Unit
+3553,Sudbury and District Health Unit
+3554,Timiskaming Health Unit
+3556,Porcupine Health Unit
+3557,Algoma Public Health Unit
+3558,Thunder Bay District Health Unit
+3559,Northwestern Health Unit
+3560,Northwestern Health Unit
