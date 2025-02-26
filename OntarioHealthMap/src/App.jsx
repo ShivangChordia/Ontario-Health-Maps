@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar"; // Import your Navbar component
+import Navbar from "./components/Navbar"; 
 import Home from "./pages/Home";
-import HealthMap from "./components/HealthMap"; // Import the HealthMap component
+import HealthMap from "./components/HealthMap"; 
 
 function App() {
   return (
