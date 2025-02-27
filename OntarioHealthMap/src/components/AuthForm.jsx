@@ -50,7 +50,7 @@ const AuthForm = ({ isSignup }) => {
       <div className="w-1/2 bg-green-200 flex flex-col justify-center items-center p-8">
         <div className="bg-green-500 p-2 rounded-lg shadow-lg">
           <img
-            src="/assets/login_bg.jpg"
+            src="../assets/login_bg.jpg"
             alt="Illustration"
             className="w-120"
           />

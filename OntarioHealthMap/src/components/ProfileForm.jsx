@@ -93,8 +93,8 @@ const ProfileForm = () => {
           <img
             src={
               focusedField === "usageIntent"
-                ? "/assets/pf_q1.jpeg"
-                : "/assets/pf_q2.jpeg"
+                ? "../assets/pf_q1.jpeg"
+                : "../assets/pf_q2.jpeg"
             }
             alt="Illustration"
             className="w-120"
