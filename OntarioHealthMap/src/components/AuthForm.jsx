@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import useAuth from "../hooks/useAuth";
+import { Link } from "react-router-dom";
 
 const API_BASE_URL = import.meta.env.VITE_BACKEND_URL;
 
@@ -108,12 +109,13 @@ const AuthForm = ({ isSignup }) => {
         </form>
         <p className="text-center text-gray-600 mt-2">
           {isSignup ? "Already have an account? " : "Dont have an account? "}
-          <a
-            href={isSignup ? "/login" : "/signup"}
-            className="text-gray-700 hover:underline"
+
+          <Link
+            to={isSignup ? "/login" : "/signup"}
+            className="ext-gray-700 hover:underline"
           >
             {isSignup ? "Login here" : "Create Account"}
-          </a>
+          </Link>
         </p>
       </div>
     </div>
