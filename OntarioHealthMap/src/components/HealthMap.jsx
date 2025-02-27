@@ -4,12 +4,11 @@ import "leaflet/dist/leaflet.css";
 
 const HealthMap = () => {
   const [geoData, setGeoData] = useState(null);
-  const [phuData, setPhuData] = useState([]); // Fetched PHU Data
-  const [missingCount, setMissingCount] = useState(0); // Tracks missing matches
+  const [phuData, setPhuData] = useState([]);
+  const [missingCount, setMissingCount] = useState(0);
 
-  // 🔹 Fetch PHU Data from PostgreSQL API (Neon)
   useEffect(() => {
-    fetch(`${import.meta.env.VITE_BACKEND_URL}/api/phu-data`) // Ensure backend is running
+    fetch(`${import.meta.env.VITE_BACKEND_URL}/api/phu-data`)
       .then((response) => response.json())
       .then((data) => {
         console.log("✅ Fetched PHU Data:", data);
@@ -30,18 +29,15 @@ const HealthMap = () => {
       .catch((error) => console.error("❌ Error loading GeoJSON data:", error));
   }, []);
 
-  // 🔹 Match PHU Regions with Census Data (Run when both datasets are loaded)
   useEffect(() => {
     if (geoData && phuData.length > 0) {
       console.log("✅ Processing PHU Matches...");
       let missing = 0;
-
       geoData.features.forEach((feature) => {
         const phuNameGeoJSON = feature.properties.NAME_ENG.trim();
         const matchingData = phuData.find(
           (data) => data.phu_name.trim() === phuNameGeoJSON
         );
-
         if (!matchingData) {
           console.warn(`❌ No match for PHU: ${phuNameGeoJSON}`);
           missing += 1;
@@ -49,22 +45,19 @@ const HealthMap = () => {
           console.log(`✅ Matched: ${matchingData.phu_name}`);
         }
       });
-
       setMissingCount(missing);
     }
-  }, [geoData, phuData]); // Runs when both datasets are available
+  }, [geoData, phuData]);
 
   const onEachFeature = (feature, layer) => {
     if (!feature.properties || !feature.properties.NAME_ENG) {
       console.warn("⚠️ Missing NAME_ENG in feature:", feature);
       return;
     }
-
     const phuNameGeoJSON = feature.properties.NAME_ENG.trim();
     let matchingData = phuData.find(
       (data) => data.phu_name.trim() === phuNameGeoJSON
     );
-
     if (matchingData) {
       layer.bindPopup(`
         <b>${matchingData.phu_name}</b><br/>
@@ -73,49 +66,21 @@ const HealthMap = () => {
         <b>Median Income:</b> $${matchingData.median_total_income || "N/A"}
       `);
     }
-
     layer.on("mouseover", function () {
       layer.setStyle({ fillColor: "yellow", fillOpacity: 0.5 });
     });
     layer.on("mouseout", function () {
-      layer.setStyle({ fillColor: "blue", fillOpacity: 0.3 });
+      layer.setStyle({ fillColor: "#3b82f6", fillOpacity: 0.3 });
     });
   };
 
   return (
-    <div>
-      <header
-        style={{
-          padding: "10px",
-          background: "#222",
-          color: "white",
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-        }}
-      >
-        <h1>Ontario Health Data Map</h1>
-        <h2 style={{ color: "red" }}>❌ Missing PHU Matches: {missingCount}</h2>
-      </header>
-
-      <div
-        id="map-container"
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          padding: "20px",
-        }}
-      >
+    <div className="flex flex-col h-screen">
+      <div className="flex flex-1 justify-center items-center p-6">
         <MapContainer
-          center={[49, -85]} // 🔹 Fixed Map Centering
-          zoom={5} // 🔹 Fixed Zoom Level
-          style={{
-            width: "90vw",
-            height: "80vh",
-            borderRadius: "10px",
-            boxShadow: "0 0 10px rgba(0,0,0,0.3)",
-          }}
+          center={[49, -85]}
+          zoom={5}
+          className="w-full h-full rounded-lg shadow-lg"
         >
           <TileLayer
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -125,7 +90,7 @@ const HealthMap = () => {
             <GeoJSON
               data={geoData}
               onEachFeature={onEachFeature}
-              style={{ color: "blue", weight: 2 }} // 🔹 Fixed Boundaries
+              style={{ color: "#3b82f6", weight: 2 }}
             />
           )}
         </MapContainer>
