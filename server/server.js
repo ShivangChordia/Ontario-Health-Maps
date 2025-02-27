@@ -26,6 +26,16 @@ const generateToken = (userId) => {
   return jwt.sign({ userId }, process.env.JWT_SECRET, { expiresIn: "1h" });
 };
 
+// ✅ Fix CORS Configuration
+const corsOptions = {
+  origin: ["http://localhost:5173", "https://ontariohealthmaps.com"],
+  methods: "GET,POST,PUT,DELETE",
+  allowedHeaders: "Content-Type,Authorization",
+  credentials: true,
+};
+
+app.use(cors(corsOptions));
+
 // 🔹 User Signup (Now Includes Name)
 app.post("/api/signup", async (req, res) => {
   const { name, email, password } = req.body;
