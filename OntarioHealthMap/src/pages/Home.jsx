@@ -4,7 +4,9 @@ const Home = () => {
   return (
     <div style={{ textAlign: "center", padding: "20px" }}>
       <h1>Welcome to the Ontario Health Map</h1>
-      <HealthMap />
+      <div style={{ width: "70%", height: "100%" }}>
+          <HealthMap />
+        </div>
     </div>
   );
 };

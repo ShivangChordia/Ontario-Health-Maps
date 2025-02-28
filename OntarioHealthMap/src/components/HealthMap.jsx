@@ -80,6 +80,12 @@ const HealthMap = () => {
         <MapContainer
           center={[49, -85]}
           zoom={5}
+          minZoom={5}
+          maxBounds={[
+            [41.6, -95], 
+            [56.9, -74], 
+          ]}
+          maxBoundsViscosity={1.0}
           className="w-full h-full rounded-lg shadow-lg"
         >
           <TileLayer
