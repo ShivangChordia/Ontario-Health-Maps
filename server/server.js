@@ -6,8 +6,6 @@ import pg from "pg";
 dotenv.config();
 
 const app = express();
-const port = 5000;
-
 app.use(cors());
 app.use(express.json());
 
@@ -20,16 +18,12 @@ const pool = new pg.Pool({
   ssl: { rejectUnauthorized: false },
 });
 
-// ✅ Fix CORS Configuration
-const corsOptions = {
-  origin: ["http://localhost:5173", "https://ontariohealthmaps.com"],
-  methods: "GET,POST,PUT,DELETE",
-  allowedHeaders: "Content-Type,Authorization",
-  credentials: true,
-};
+// ✅ Root Route (Fix "Cannot GET /" Error)
+app.get("/", (req, res) => {
+  res.send("✅ Ontario Health Maps Backend is Running!");
+});
 
-app.use(cors(corsOptions));
-
+// ✅ Fetch Public Health Unit (PHU) Data
 app.get("/api/phu-data", async (req, res) => {
   try {
     const result = await pool.query("SELECT * FROM public_health_units");
@@ -40,22 +34,20 @@ app.get("/api/phu-data", async (req, res) => {
   }
 });
 
-app.get("/api/cancer-data", async (req, res) => {
+// ✅ Fetch Cancer Data (Fixing Missing Endpoint)
+app.get("/api/disease-data/Cancer", async (req, res) => {
   try {
     const { year, age, gender } = req.query;
 
     let query = "SELECT * FROM cancer WHERE 1=1";
     let params = [];
 
-    // Apply Year Filter
     if (year) {
       query += ` AND Year = $${params.length + 1}`;
       params.push(year);
     }
 
-    // Apply Age Filter
     if (age) {
-      // Map selected age group to appropriate measures
       const ageMapping = {
         "50-64": "Age-specific rate (50 to 64)",
         "65-79": "Age-specific rate (65 to 79)",
@@ -68,7 +60,6 @@ app.get("/api/cancer-data", async (req, res) => {
       }
     }
 
-    // Execute Query
     const result = await pool.query(query, params);
     res.json(result.rows);
   } catch (error) {
@@ -77,7 +68,5 @@ app.get("/api/cancer-data", async (req, res) => {
   }
 });
 
-// 🔹 Start Server
-app.listen(port, () => {
-  console.log(`🚀 Server running on http://localhost:${port}`);
-});
+// ✅ Export Express App for Vercel
+export default app;
